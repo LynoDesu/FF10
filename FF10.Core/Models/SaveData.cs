@@ -4,7 +4,7 @@ using FF10.Core.Helpers;
 
 namespace FF10.Core.Models
 {
-	class SaveData
+	public class SaveData
 	{
 		private static SaveData mThis;
 		private String mFileName = null;

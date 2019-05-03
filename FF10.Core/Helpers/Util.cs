@@ -2,7 +2,7 @@
 
 namespace FF10.Core.Helpers
 {
-    class Util
+    public class Util
 	{
 		public static void WriteNumber(uint address, uint size, uint value, uint min, uint max)
 		{

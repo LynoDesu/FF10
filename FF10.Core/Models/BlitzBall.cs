@@ -3,7 +3,7 @@ using FF10.Core.Helpers;
 
 namespace FF10.Core.Models
 {
-    class BlitzBall
+    public class BlitzBall
 	{
 		private readonly uint mExpAddress;
 		private readonly uint mSlotAddress;

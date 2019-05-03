@@ -3,7 +3,7 @@ using FF10.Core.Helpers;
 
 namespace FF10.Core.Models
 {
-    class Equipment : INotifyPropertyChanged
+    public class Equipment : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
 

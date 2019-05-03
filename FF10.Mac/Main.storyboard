@@ -1147,6 +1147,21 @@
                             <constraint firstAttribute="bottom" secondItem="GTY-tl-E6w" secondAttribute="bottom" constant="7" id="sxF-T1-laH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sliderOverdrive" destination="s3d-1F-rkQ" id="Dce-Yz-8yu"/>
+                        <outlet property="tableViewCharacters" destination="BHS-xu-TBZ" id="l0N-IO-g1K"/>
+                        <outlet property="txtAccuracy" destination="nqS-YH-aYN" id="kPd-Hz-zaV"/>
+                        <outlet property="txtAttack" destination="brQ-SR-42S" id="DSb-X1-D1T"/>
+                        <outlet property="txtAvoidance" destination="qsl-6V-7Ms" id="kd3-En-Qo9"/>
+                        <outlet property="txtDefence" destination="HfU-lL-5LY" id="H9D-xi-ll2"/>
+                        <outlet property="txtHP" destination="hHN-H5-yUy" id="RZb-hV-zhe"/>
+                        <outlet property="txtLevel" destination="hbd-ZW-LH1" id="HDx-5Q-WvG"/>
+                        <outlet property="txtLuck" destination="MRR-dp-UaL" id="WBu-qj-Bfd"/>
+                        <outlet property="txtMP" destination="tQD-Iy-QGH" id="AyZ-Tn-7Gz"/>
+                        <outlet property="txtMagic" destination="XAu-t6-rhQ" id="q4u-0T-kva"/>
+                        <outlet property="txtMagicDef" destination="ksT-NC-B2x" id="mhy-wH-zKA"/>
+                        <outlet property="txtSpeed" destination="Ypn-K7-j5h" id="Pva-W8-AY5"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

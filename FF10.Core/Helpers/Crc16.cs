@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FF10.Core.Helpers
 {
-	class Crc16
+	public class Crc16
 	{
 		private readonly ushort[] mTable = new ushort[256];
 

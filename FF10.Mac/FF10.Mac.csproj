@@ -86,5 +86,11 @@
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Resources\en.lproj\Main.storyboard" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FF10.Core\FF10.Core.csproj">
+      <Project>{A66FDC4D-DA27-46F4-8454-5979E21CE868}</Project>
+      <Name>FF10.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

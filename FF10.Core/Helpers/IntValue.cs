@@ -7,7 +7,7 @@ using FF10.Core.Models;
 
 namespace FF10.Core.Helpers
 {
-	class IntValue
+	public class IntValue
 	{
 		private readonly uint mAddress;
 		private readonly uint mSize;

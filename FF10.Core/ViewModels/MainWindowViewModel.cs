@@ -11,7 +11,7 @@ using FF10.Core.Helpers;
 
 namespace FF10.Core.ViewModels
 {
-	class MainWindowViewModel
+	public class MainWindowViewModel
 	{
 		public ObservableCollection<Character> Party { get; set; } = new ObservableCollection<Character>();
 		public ObservableCollection<Item> Items { get; set; } = new ObservableCollection<Item>();

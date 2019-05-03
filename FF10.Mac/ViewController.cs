@@ -2,20 +2,23 @@
 
 using AppKit;
 using Foundation;
+using FF10.Core.ViewModels;
 
 namespace FF10.Mac
 {
     public partial class ViewController : NSViewController
     {
+        MainWindowViewModel _viewModel;
+
         public ViewController(IntPtr handle) : base(handle)
         {
         }
 
         public override void ViewDidLoad()
         {
-            base.ViewDidLoad();
+            _viewModel = new MainWindowViewModel();
 
-            // Do any additional setup after loading the view.
+            base.ViewDidLoad();
         }
 
         public override NSObject RepresentedObject

@@ -8,7 +8,7 @@ using FF10.Core.Helpers;
 
 namespace FF10.Core.Models
 {
-	class Item : INotifyPropertyChanged
+	public class Item : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
 

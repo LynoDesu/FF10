@@ -3,7 +3,7 @@ using FF10.Core.Helpers;
 
 namespace FF10.Core.Models
 {
-    class Character
+    public class Character
 	{
 		private readonly uint mAddress;
 		public NameValueInfo Info { get; set; }

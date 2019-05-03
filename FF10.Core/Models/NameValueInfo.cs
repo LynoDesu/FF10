@@ -2,7 +2,7 @@
 
 namespace FF10.Core.Models
 {
-	class NameValueInfo : ILineAnalysis, IComparable
+	public class NameValueInfo : ILineAnalysis, IComparable
 	{
 		public uint Value { get; private set; }
 		public String Name { get; private set; }

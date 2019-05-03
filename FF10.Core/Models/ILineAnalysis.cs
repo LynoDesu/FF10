@@ -2,7 +2,7 @@
 
 namespace FF10.Core.Models
 {
-	interface ILineAnalysis
+	public interface ILineAnalysis
     {
 		bool Line(string[] oneLine); 
     }

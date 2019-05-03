@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FF10.Core.Models
 {
-	class Info
+	public class Info
 	{
 		private static Info mThis;
 		public List<NameValueInfo> Party { get; private set; } = new List<NameValueInfo>();

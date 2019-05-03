@@ -7,7 +7,7 @@ using FF10.Core.Helpers;
 
 namespace FF10.Core.Models
 {
-	class OverDrive
+	public class OverDrive
 	{
 		public NameValueInfo Info { get; private set; }
 

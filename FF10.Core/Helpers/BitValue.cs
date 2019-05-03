@@ -7,7 +7,7 @@ using FF10.Core.Models;
 
 namespace FF10.Core.Helpers
 {
-	class BitValue
+	public class BitValue
 	{
 		private readonly uint mAddress;
 		public NameValueInfo Info { get; set; }
