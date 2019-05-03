@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
-using FF10.Helpers;
+using FF10.Core.Helpers;
 
-namespace FF10.Models
+namespace FF10.Core.Models
 {
 	class Item : INotifyPropertyChanged
 	{

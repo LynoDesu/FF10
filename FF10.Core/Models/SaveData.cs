@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using FF10.Helpers;
+using FF10.Core.Helpers;
 
-namespace FF10
+namespace FF10.Core.Models
 {
 	class SaveData
 	{

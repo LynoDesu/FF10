@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Collections.ObjectModel;
-using FF10.Models;
-using FF10.Helpers;
+using FF10.Core.Models;
+using FF10.Core.Helpers;
 
-namespace FF10.ViewModels
+namespace FF10.Core.ViewModels
 {
 	class MainWindowViewModel
 	{

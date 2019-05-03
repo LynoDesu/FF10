@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FF10.Core.Models;
 
-namespace FF10.Helpers
+namespace FF10.Core.Helpers
 {
 	class IntValue
 	{

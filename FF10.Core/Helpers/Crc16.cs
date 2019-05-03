@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FF10.Helpers
+namespace FF10.Core.Helpers
 {
 	class Crc16
 	{

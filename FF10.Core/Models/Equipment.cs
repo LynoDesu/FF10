@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using FF10.Helpers;
+﻿using System.ComponentModel;
+using FF10.Core.Helpers;
 
-namespace FF10.Models
+namespace FF10.Core.Models
 {
-	class Equipment : INotifyPropertyChanged
+    class Equipment : INotifyPropertyChanged
 	{
 		public event PropertyChangedEventHandler PropertyChanged;
 

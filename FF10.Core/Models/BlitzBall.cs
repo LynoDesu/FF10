@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
-using FF10.Helpers;
+﻿using System.Collections.ObjectModel;
+using FF10.Core.Helpers;
 
-namespace FF10.Models
+namespace FF10.Core.Models
 {
-	class BlitzBall
+    class BlitzBall
 	{
 		private readonly uint mExpAddress;
 		private readonly uint mSlotAddress;
@@ -25,7 +20,7 @@ namespace FF10.Models
 			mAgreementAddress = address + 1322 + info.Value;
 			Info = info;
 
-			foreach (var item in FF10.Info.Instance().Blitz_Skill)
+			foreach (var item in Models.Info.Instance().Blitz_Skill)
 			{
 				Skills.Add(new BitValue(address + info.Value * 4, item));
 			}

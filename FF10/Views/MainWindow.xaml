@@ -4,11 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:coverters="clr-namespace:FF10.Converters"
-        xmlns:viewmodels="clr-namespace:FF10.ViewModels"
+        xmlns:viewmodels="clr-namespace:FF10.Core.ViewModels"
         xmlns:views="clr-namespace:FF10.Views"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="FF10 SaveEditor(Nintendo Switch)" Height="500" Width="700"
+        Title="FF10 SaveEditor (Nintendo Switch)" Height="500" Width="700"
         AllowDrop="True" Drop="Window_Drop" PreviewDragOver="Window_PreviewDragOver">
     <Window.DataContext>
         <viewmodels:MainWindowViewModel/>

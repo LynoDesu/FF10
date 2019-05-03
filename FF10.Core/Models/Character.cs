@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.ObjectModel;
-using FF10.Helpers;
+﻿using System.Collections.ObjectModel;
+using FF10.Core.Helpers;
 
-namespace FF10.Models
+namespace FF10.Core.Models
 {
-	class Character
+    class Character
 	{
 		private readonly uint mAddress;
 		public NameValueInfo Info { get; set; }
@@ -19,12 +14,12 @@ namespace FF10.Models
 		{
 			mAddress = address;
 
-			foreach (var info in FF10.Info.Instance().Skills)
+			foreach (var info in Models.Info.Instance().Skills)
 			{
 				Skills.Add(new BitValue(address + 60, info));
 			}
 
-			foreach (var info in FF10.Info.Instance().OverDrives)
+			foreach (var info in Models.Info.Instance().OverDrives)
 			{
 				OverDrives.Add(new OverDrive(address + 94 + info.Value * 2, address + 134, info));
 			}

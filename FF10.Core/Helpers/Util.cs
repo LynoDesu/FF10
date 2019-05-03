@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FF10.Core.Models;
 
-namespace FF10.Helpers
+namespace FF10.Core.Helpers
 {
-	class Util
+    class Util
 	{
 		public static void WriteNumber(uint address, uint size, uint value, uint min, uint max)
 		{

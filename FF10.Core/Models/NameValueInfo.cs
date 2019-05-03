@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FF10
+namespace FF10.Core.Models
 {
 	class NameValueInfo : ILineAnalysis, IComparable
 	{

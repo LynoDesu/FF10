@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace FF10
+namespace FF10.Core.Models
 {
 	interface ILineAnalysis
     {
-		bool Line(String[] oneLine); 
+		bool Line(string[] oneLine); 
     }
 }

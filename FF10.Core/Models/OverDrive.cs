@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FF10.Helpers;
+using FF10.Core.Helpers;
 
-namespace FF10.Models
+namespace FF10.Core.Models
 {
 	class OverDrive
 	{

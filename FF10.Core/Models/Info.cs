@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FF10
+namespace FF10.Core.Models
 {
 	class Info
 	{
