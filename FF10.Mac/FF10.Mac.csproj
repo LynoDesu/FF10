@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="DataSources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -81,6 +82,8 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSources\CharacterDataSource.cs" />
+    <Compile Include="DataSources\CharacterTableDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />

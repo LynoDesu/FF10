@@ -1,9 +1,9 @@
 ﻿using System;
-
 using AppKit;
-using Foundation;
-using FF10.Core.Models;
+using FF10.Core.Data;
 using FF10.Core.ViewModels;
+using FF10.Mac.DataSources;
+using Foundation;
 
 namespace FF10.Mac
 {
@@ -22,7 +22,7 @@ namespace FF10.Mac
             base.ViewDidLoad();
         }
 
-        void DIsplayCharacterStats(int characterIndex)
+        void DisplayCharacterStats(int characterIndex)
         {
             txtHP.IntValue = (int)_viewModel.Party[characterIndex].HP;
             txtMP.IntValue = (int)_viewModel.Party[characterIndex].MP;
@@ -39,6 +39,22 @@ namespace FF10.Mac
 
         void SetCharacterListValues()
         {
+            // Create the Character Table Data Source and populate it
+            var dataSource = new CharacterDataSource();
+            dataSource.Characters = Data.CharacterData;
+
+            // Populate the Character Table
+            tableViewCharacters.Source = dataSource;
+            tableViewCharacters.Delegate = new CharacterTableDelegate(dataSource);
+
+            tableViewCharacters.ReloadData();
+        }
+
+        public override void AwakeFromNib()
+        {
+            base.AwakeFromNib();
+
+            SetCharacterListValues();
         }
 
         public override NSObject RepresentedObject
