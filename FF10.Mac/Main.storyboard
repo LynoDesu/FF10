@@ -1012,11 +1012,14 @@
                                                     </scroller>
                                                 </scrollView>
                                                 <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s3d-1F-rkQ">
-                                                    <rect key="frame" x="278" y="16" width="138" height="19"/>
+                                                    <rect key="frame" x="278" y="17" width="138" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="cdB-Zr-FZt"/>
                                                     </constraints>
-                                                    <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="below" sliderType="linear" id="vmP-yq-Vwb"/>
+                                                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="vmP-yq-Vwb"/>
+                                                    <connections>
+                                                        <action selector="valueChanged:" target="XfG-lQ-9wD" id="y0W-UN-bvQ"/>
+                                                    </connections>
                                                 </slider>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JDA-oN-CVm">
                                                     <rect key="frame" x="181" y="21" width="67" height="17"/>
@@ -1025,6 +1028,17 @@
                                                     </constraints>
                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Overdrive:" id="Kam-82-GxB">
                                                         <font key="font" usesAppearanceFont="YES"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-WX-tTt">
+                                                    <rect key="frame" x="422" y="17" width="31" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="cdR-Ie-p69"/>
+                                                    </constraints>
+                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="50%" id="SOv-Sa-bdp">
+                                                        <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     </textFieldCell>
@@ -1062,6 +1076,7 @@
                                                 <constraint firstItem="8bP-kg-111" firstAttribute="leading" secondItem="bet-WO-LpO" secondAttribute="trailing" constant="16" id="S3n-Rb-z58"/>
                                                 <constraint firstItem="BYf-bN-rUZ" firstAttribute="top" secondItem="fDL-cp-SjD" secondAttribute="bottom" constant="8" id="SKy-Mq-Gd3"/>
                                                 <constraint firstAttribute="trailing" secondItem="hHN-H5-yUy" secondAttribute="trailing" constant="175" id="TDI-71-DoM"/>
+                                                <constraint firstItem="hJe-WX-tTt" firstAttribute="leading" secondItem="s3d-1F-rkQ" secondAttribute="trailing" constant="10" id="ToD-0D-xG3"/>
                                                 <constraint firstItem="s3d-1F-rkQ" firstAttribute="leading" secondItem="JDA-oN-CVm" secondAttribute="trailing" constant="34" id="Ubq-Id-521"/>
                                                 <constraint firstItem="Mec-mF-ZWV" firstAttribute="leading" secondItem="bet-WO-LpO" secondAttribute="trailing" constant="16" id="Ufq-Jm-PLt"/>
                                                 <constraint firstItem="qsl-6V-7Ms" firstAttribute="leading" secondItem="Ybz-3z-X69" secondAttribute="trailing" constant="30" id="XLT-l5-Dvi"/>
@@ -1087,6 +1102,7 @@
                                                 <constraint firstItem="n5L-FE-kTA" firstAttribute="top" secondItem="SlR-20-ifL" secondAttribute="bottom" constant="8" id="gni-ll-TxU"/>
                                                 <constraint firstItem="ksT-NC-B2x" firstAttribute="leading" secondItem="8bP-kg-111" secondAttribute="trailing" constant="28" id="gy5-tX-DqH"/>
                                                 <constraint firstItem="9s4-dp-8Jj" firstAttribute="leading" secondItem="bet-WO-LpO" secondAttribute="trailing" constant="16" id="izI-CK-q5M"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="hJe-WX-tTt" secondAttribute="trailing" constant="146" id="jB2-5S-rPX"/>
                                                 <constraint firstItem="qsl-6V-7Ms" firstAttribute="top" secondItem="MRR-dp-UaL" secondAttribute="bottom" constant="3" id="jIl-hr-EPL"/>
                                                 <constraint firstItem="8bP-kg-111" firstAttribute="top" secondItem="UvB-hf-wjb" secondAttribute="bottom" constant="8" id="k2G-bC-KIe"/>
                                                 <constraint firstAttribute="trailing" secondItem="tQD-Iy-QGH" secondAttribute="trailing" constant="175" id="kEZ-am-ZkZ"/>
@@ -1103,6 +1119,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="ksT-NC-B2x" secondAttribute="trailing" constant="175" id="rKV-Pi-VVW"/>
                                                 <constraint firstItem="bet-WO-LpO" firstAttribute="leading" secondItem="uVi-0K-Qlv" secondAttribute="leading" constant="3" id="tQp-G8-3Lm"/>
                                                 <constraint firstItem="UvB-hf-wjb" firstAttribute="top" secondItem="Dwt-UD-n9f" secondAttribute="bottom" constant="8" id="uYH-Aw-3rT"/>
+                                                <constraint firstAttribute="bottom" secondItem="hJe-WX-tTt" secondAttribute="bottom" constant="17" id="udU-dH-fwi"/>
                                                 <constraint firstAttribute="trailing" secondItem="brQ-SR-42S" secondAttribute="trailing" constant="175" id="ujc-bS-JW9"/>
                                                 <constraint firstAttribute="trailing" secondItem="hbd-ZW-LH1" secondAttribute="trailing" constant="175" id="uwm-Xj-N4T"/>
                                                 <constraint firstItem="zaG-jv-kt1" firstAttribute="leading" secondItem="bet-WO-LpO" secondAttribute="trailing" constant="16" id="vM0-yw-AGL"/>
@@ -1148,6 +1165,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblOverdrivePercent" destination="hJe-WX-tTt" id="Vf4-Er-Lyv"/>
                         <outlet property="sliderOverdrive" destination="s3d-1F-rkQ" id="Dce-Yz-8yu"/>
                         <outlet property="tableViewCharacters" destination="BHS-xu-TBZ" id="l0N-IO-g1K"/>
                         <outlet property="txtAccuracy" destination="nqS-YH-aYN" id="kPd-Hz-zaV"/>
@@ -1165,7 +1183,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="704"/>
+            <point key="canvasLocation" x="75" y="743"/>
         </scene>
     </scenes>
 </document>

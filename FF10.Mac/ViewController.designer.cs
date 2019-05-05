@@ -13,6 +13,9 @@ namespace FF10.Mac
 	partial class ViewController
 	{
 		[Outlet]
+		AppKit.NSTextField lblOverdrivePercent { get; set; }
+
+		[Outlet]
 		AppKit.NSSlider sliderOverdrive { get; set; }
 
 		[Outlet]
@@ -50,27 +53,30 @@ namespace FF10.Mac
 
 		[Outlet]
 		AppKit.NSTextField txtSpeed { get; set; }
+
+		[Action ("valueChanged:")]
+		partial void valueChanged (AppKit.NSSlider sender);
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (lblOverdrivePercent != null) {
+				lblOverdrivePercent.Dispose ();
+				lblOverdrivePercent = null;
+			}
+
+			if (sliderOverdrive != null) {
+				sliderOverdrive.Dispose ();
+				sliderOverdrive = null;
+			}
+
 			if (tableViewCharacters != null) {
 				tableViewCharacters.Dispose ();
 				tableViewCharacters = null;
 			}
 
-			if (txtHP != null) {
-				txtHP.Dispose ();
-				txtHP = null;
-			}
-
-			if (txtMP != null) {
-				txtMP.Dispose ();
-				txtMP = null;
-			}
-
-			if (txtLevel != null) {
-				txtLevel.Dispose ();
-				txtLevel = null;
+			if (txtAccuracy != null) {
+				txtAccuracy.Dispose ();
+				txtAccuracy = null;
 			}
 
 			if (txtAttack != null) {
@@ -78,9 +84,29 @@ namespace FF10.Mac
 				txtAttack = null;
 			}
 
+			if (txtAvoidance != null) {
+				txtAvoidance.Dispose ();
+				txtAvoidance = null;
+			}
+
 			if (txtDefence != null) {
 				txtDefence.Dispose ();
 				txtDefence = null;
+			}
+
+			if (txtHP != null) {
+				txtHP.Dispose ();
+				txtHP = null;
+			}
+
+			if (txtLevel != null) {
+				txtLevel.Dispose ();
+				txtLevel = null;
+			}
+
+			if (txtLuck != null) {
+				txtLuck.Dispose ();
+				txtLuck = null;
 			}
 
 			if (txtMagic != null) {
@@ -93,29 +119,14 @@ namespace FF10.Mac
 				txtMagicDef = null;
 			}
 
+			if (txtMP != null) {
+				txtMP.Dispose ();
+				txtMP = null;
+			}
+
 			if (txtSpeed != null) {
 				txtSpeed.Dispose ();
 				txtSpeed = null;
-			}
-
-			if (txtLuck != null) {
-				txtLuck.Dispose ();
-				txtLuck = null;
-			}
-
-			if (txtAvoidance != null) {
-				txtAvoidance.Dispose ();
-				txtAvoidance = null;
-			}
-
-			if (txtAccuracy != null) {
-				txtAccuracy.Dispose ();
-				txtAccuracy = null;
-			}
-
-			if (sliderOverdrive != null) {
-				sliderOverdrive.Dispose ();
-				sliderOverdrive = null;
 			}
 		}
 	}
